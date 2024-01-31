@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "608fd065-e7c9-4604-b97a-eb87823247a1",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24689240",
+		"_collection_link": "https://planetary-meadow-438234.postman.co/workspace/hyla~94803d0c-76f1-45fc-944e-f4283085ebbe/collection/24689240-608fd065-e7c9-4604-b97a-eb87823247a1?action=share&source=collection_link&creator=24689240"
+	},
+	"item": [
+		{
+			"name": "searching",
+			"item": [
+				{
+					"name": "Main Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/v1/search?q=&sector_name=&country_name=&type=all&from&to=",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "sector_name",
+									"value": ""
+								},
+								{
+									"key": "country_name",
+									"value": ""
+								},
+								{
+									"key": "type",
+									"value": "all"
+								},
+								{
+									"key": "from",
+									"value": null,
+									"description": "default=0"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "default=500"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
